@@ -1,0 +1,113 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-color: #010104;
+}
+
+.menubar-color{
+	-fx-background-color:#708AF4;
+}
+ 
+.menu-bar .label {
+	-fx-font-size: 14.0 pt;
+	-fx-font-family: "Bookman Old Style";
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-padding: 10.0px;
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background-color: black ;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+    
+    }
+
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: #010104;
+    -fx-background-color: #191B2A ;
+} 
+
+/*.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: black;
+}
+ */
+
+.menu-item .label{
+	-fx-font-size: 10.0pt;
+	-fx-text-fill: white;
+}
+
+.menu-item .label:hover{
+	-fx-font-size: 10.0pt;
+	-fx-background-color: black;
+	-fx-text-fill: white;
+}
+
+.menu-item:focused{
+	-fx-background-color: #708AF4;
+}
+
+#allbtn{
+	-fx-background: yellow;
+	-fx-background-color: #EEC139;
+	-fx-font-size: 11.0pt;
+	-fx-text-fill: white;
+	-fx-font-family: Arial, sans-serif;
+	-fx-font-weight: bold;
+}
+
+#allbtn:hover{
+	-fx-background-color: #708AF4;
+}
+
+#label-btn{
+	-fx-background-color: #D3FBD8;
+	-fx-text-fill: black;
+}
+.button .label{
+	-fx-font-size: 11.0pt;
+	-fx-text-fill: white;
+	-fx-font-family: Arial, sans-serif;
+}
+
+.grid{
+	-fx-background-color: #191B2A;
+	-fx-background-radius: 5.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-padding: 10;
+    -fx-hgap: 5;
+    -fx-vgap: 35;
+}
+
+.grid .label{
+	-fx-font-size: 11.0pt;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-font-family: Arial, sans-serif;
+}
+
+.grid .label:hover{
+	-fx-font-size: 11.0pt;
+	-fx-background-color: #708AF4;
+	-fx-text-fill: white;
+}
+
+#hbox{
+	-fx-background-color: white;
+}
+
+
+
+/* .context-menu {
+    /*-fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:white ;
+    -fx-border-width: 0.2px;
+    -fx-border-color: black;
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;
+}*/

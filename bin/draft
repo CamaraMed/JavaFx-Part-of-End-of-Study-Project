@@ -1,0 +1,66 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+
+
+public class Main extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			BorderPane root = new BorderPane();
+			Scene scene = new Scene(root,400,400);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
+
+
+/*Menu summaryMenu = new Menu("Summary Size");
+		CheckMenuItem showLines = new CheckMenuItem("Show Line Numbers");		
+		showLines.setOnAction(e ->{
+			if(showLines.isSelected())
+				System.out.println("Program will now display line numbers");
+			else
+				System.out.println("Hiding Line numbers");
+		});
+		CheckMenuItem autoSave = new CheckMenuItem("Enable Autosave");
+		autoSave.setSelected(true);
+		summaryMenu.getItems().addAll(showLines, autoSave);
+		
+*/
+
+
+// Part of javaFxTest2Project
+private Stage createStageTwo() {
+		// TODO Auto-generated method stub
+		stage2 = new Stage();
+		stage2.setTitle("Stage 2");
+		stage2.initOwner(stage1);
+		stage2.initModality(Modality.APPLICATION_MODAL);
+		Button button2= new Button("Click to close Stage2");
+		button2.setOnAction(e->stage2.close());
+		VBox vBox = new VBox(button2);
+		
+		vBox.setStyle("fx-background-color: yellow");
+		scene2 = new Scene(vBox,800,600);
+		scene2.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		
+		stage2.setScene(scene2);
+		return stage2;
+	}
+	
+	
+	/Auto playing the video when it is upload
+		if(watch.isPressed()) {
+			mediaPlayer.setAutoPlay(true);
+		}
+
